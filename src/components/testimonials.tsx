@@ -17,21 +17,21 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="px-6 py-24 bg-black text-white">
+    <section id="testimonials" className="px-6 py-24 text-white bg-black">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: false }}
-        className="max-w-7xl mx-auto text-center"
+        className="mx-auto text-center max-w-7xl"
       >
-        <p className="text-yellow-600 uppercase tracking-widest mb-2 font-semibold text-sm">
+        <p className="mb-2 text-sm font-semibold tracking-widest text-yellow-600 uppercase">
           CLIENT'S TESTIMONIAL
         </p>
         <h2 className="mb-10 text-4xl font-bold">
           Reviews From Our Mining Clients
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {testimonials.map((t, i) => (
             <motion.blockquote
               key={i}
@@ -39,7 +39,7 @@ const Testimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.2, duration: 0.5 }}
               viewport={{ once: false }}
-              className="relative p-8 bg-gray-900 rounded-lg shadow-lg text-left"
+              className="relative p-8 text-left bg-gray-900 rounded-lg shadow-lg"
             >
               <p className="mb-6">{t.feedback}</p>
               <div className="flex items-center justify-between">
@@ -47,7 +47,7 @@ const Testimonials = () => {
                   <h3 className="text-xl font-bold">{t.name}</h3>
                   <p className="text-yellow-600">{t.title}</p>
                 </div>
-                <div className="w-10 h-10 bg-yellow-600 rounded-full flex items-center justify-center">
+                <div className="flex items-center justify-center w-10 h-10 bg-yellow-600 rounded-full">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="currentColor"
