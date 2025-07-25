@@ -4,11 +4,11 @@ import LazyImage from "./LazyImage";
 import { motion } from "framer-motion";
 
 const About = () => (
-  <section id="about" className="w-full px-6 py-24 text-white bg-black">
+  <section id="about" className="w-full py-24 text-white bg-black">
     <div className="bg-[#08040c] py-6 px-4 mb-12 flex items-center justify-center max-w-[600px] mx-auto">
       <div className="w-24 h-px md:w-48 bg-white/10" />
       <p className="px-4 text-lg font-medium text-center text-white md:text-xl">
-        Worked with <span className="font-bold text-purple-500">100+</span> Companies Since 2019
+        Hallifax Energy and Mining - Serving the Industry Since 2019
       </p>
       <div className="w-24 h-px md:w-48 bg-white/10" />
     </div>
@@ -55,18 +55,18 @@ const About = () => (
           viewport={{ once: false }}
           className="mb-6 text-4xl font-bold md:text-5xl"
         >
-          The Mining Company Story
+          Hallifax Energy and Mining
         </motion.h2>
         <p className="mb-4 text-lg leading-relaxed text-gray-300">
-          Our mining company was founded with a commitment to responsible and sustainable resource extraction. We leverage cutting-edge technology and industry expertise to deliver high-quality minerals while minimizing environmental impact.
+          Hallifax Energy and Mining is a leading provider of mining supplies, fuel services, and advisory solutions dedicated to supporting the mining and energy sectors.
         </p>
         <p className="mb-4 text-lg leading-relaxed text-gray-300">
-          Beyond our core mining operations, we are dedicated to community development and innovation through several key projects that drive growth and sustainability in the regions we operate.
+          Our core offerings include reagents, chemicals, drilling consumables, grinding balls, fuel supplies and services to oil fields, and expert advisory services to optimize your operations.
         </p>
         <ul className="space-y-2 text-lg leading-relaxed text-gray-300 list-disc list-inside">
-          <li><strong>EcoMine Initiative</strong> – Promoting environmentally friendly mining practices and rehabilitation of mining sites.</li>
-          <li><strong>Community Growth Program</strong> – Supporting local communities with education, healthcare, and infrastructure development.</li>
-          <li><strong>Tech Innovation Hub</strong> – Investing in research and development to improve mining efficiency and safety.</li>
+          <li><strong>Mining Supplies</strong> – Reagents, Chemicals, Drilling Consumables, Grinding Balls, and more.</li>
+          <li><strong>Fuel Supplies & Service</strong> – Reliable fuel supply and maintenance for oil fields.</li>
+          <li><strong>Advisory Services</strong> – Industry expertise to guide your mining projects.</li>
         </ul>
       </div>
     </div>

@@ -1,25 +1,25 @@
 import React, { memo } from "react";
 import { motion } from "framer-motion";
-import { FaMountain, FaHardHat, FaTools } from "react-icons/fa";
+import { FaFlask, FaGasPump, FaHandsHelping } from "react-icons/fa";
 
 const services = [
   {
-    title: "Incline Mining Operations",
+    title: "Mining Supplies",
     description:
-      "Expertise in managing and optimizing incline mining operations to ensure safety and efficiency in challenging terrains.",
-    icon: <FaMountain className="text-yellow-500 w-6 h-6 mb-2" />,
+      "Reagents, Chemicals, Drilling Consumables, Grinding Balls and other essential mining supplies to support your operations.",
+    icon: <FaFlask className="text-yellow-500 w-6 h-6 mb-2" />,
   },
   {
-    title: "Safety & Compliance",
+    title: "Fuel Supplies & Service",
     description:
-      "Comprehensive safety protocols and compliance management to protect workers and meet industry regulations.",
-    icon: <FaHardHat className="text-yellow-500 w-6 h-6 mb-2" />,
+      "Reliable fuel supplies and maintenance services tailored for oil fields to ensure uninterrupted operations.",
+    icon: <FaGasPump className="text-yellow-500 w-6 h-6 mb-2" />,
   },
   {
-    title: "Equipment Maintenance & Support",
+    title: "Advisory Services",
     description:
-      "Reliable maintenance and technical support services to maximize equipment uptime and performance.",
-    icon: <FaTools className="text-yellow-500 w-6 h-6 mb-2" />,
+      "Expert advisory services to guide your mining projects with industry insights and best practices.",
+    icon: <FaHandsHelping className="text-yellow-500 w-6 h-6 mb-2" />,
   },
 ];
 
@@ -27,13 +27,13 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="py-24 px-6 bg-black text-white max-w-7xl mx-auto"
+      className="py-24 bg-black text-white w-full"
       style={{ backgroundImage: "url('/path-to-subtle-pattern.svg')" }}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
         <div>
           <p className="text-yellow-500 uppercase tracking-widest mb-2 font-semibold text-sm">
-            MINING INCLINE SERVICES
+            OUR SERVICES
           </p>
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -46,7 +46,7 @@ const Services = () => {
           </motion.h2>
         </div>
         <div className="text-gray-300 text-lg">
-          Our mining incline services are designed to provide innovative, safe, and efficient solutions tailored to the unique challenges of incline mining operations.
+          We provide comprehensive services tailored to meet the needs of the mining and energy sectors.
         </div>
       </div>
 

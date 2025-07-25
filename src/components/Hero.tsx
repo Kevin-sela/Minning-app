@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden w-full px-0"
     >
       {/* 3D Background */}
       <div className="absolute inset-0 z-0 w-full h-full">
@@ -41,11 +41,10 @@ const Hero = () => {
         className="relative z-10 max-w-3xl text-white"
       >
         <h1 className="text-4xl md:text-6xl font-semibold leading-tight">
-          We Help You Build
-          <span className="block text-yellow-400">Mining Solutions</span>
+          Hallifax Energy and Mining
         </h1>
         <p className="mt-6 text-lg md:text-xl text-white/80">
-          Strategy. Technology. Safety. Delivered with responsibility.
+          Mining Supplies, Fuel Services, and Expert Advisory for the Energy Sector.
         </p>
         <button
           type="button"
@@ -60,3 +59,4 @@ const Hero = () => {
 };
 
 export default memo(Hero);
+

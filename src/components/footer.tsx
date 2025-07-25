@@ -2,8 +2,8 @@ import React, { memo } from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white px-6 py-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <footer className="bg-black text-white py-12 w-full">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6">
         <div>
           <h3 className="mb-4 text-lg font-semibold">About Us</h3>
           <p className="text-gray-300 leading-relaxed">
@@ -38,7 +38,9 @@ const Footer = () => {
         <div>
           <h3 className="mb-4 text-lg font-semibold">Contact Detail</h3>
           <p className="text-gray-300 mb-2">Connect with Us Today!</p>
-          <p className="text-gray-300 mb-1">Address : 123 Mining Road, Industrial Park - Accra</p>
+          <p className="text-gray-300 mb-1">Hallifax Energy and Mining</p>
+          <p className="text-gray-300 mb-1">P O Box 20711</p>
+          <p className="text-gray-300 mb-1">Accra</p>
           <p className="text-gray-300 mb-1">Email : info@miningcompany.com</p>
           <p className="text-gray-300">Phone : +233507091754</p>
         </div>

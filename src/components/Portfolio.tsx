@@ -12,7 +12,7 @@ const portfolioImages = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="px-6 py-24 mx-auto overflow-x-hidden text-white bg-black max-w-7xl">
+    <section id="portfolio" className="py-24 overflow-x-hidden text-white bg-black w-full">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -20,9 +20,9 @@ const Portfolio = () => {
         viewport={{ once: false }}
         className="max-w-3xl mx-auto mb-16 text-center"
       >
-        <h2 className="mb-4 text-5xl font-bold">Our Recent Mining Projects</h2>
+        <h2 className="mb-4 text-5xl font-bold">Our Core Mining Projects</h2>
         <p className="text-lg leading-relaxed text-gray-300">
-          Explore some of our recent mining projects showcasing our expertise and commitment to sustainable and responsible mining practices.
+          Showcasing key projects in mining supplies, fuel services, and advisory solutions tailored to the energy sector.
         </p>
       </motion.div>
 
