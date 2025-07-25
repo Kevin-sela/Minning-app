@@ -34,8 +34,11 @@ const Navbar = () => {
         }`}
       >
         <div className="flex items-center justify-between max-w-6xl px-6 py-4 mx-auto text-sm">
-          <a href="#hero" className="font-bold tracking-wide text-gray-900">
-            Hallifax Minning and Energy
+          <a
+            href="#hero"
+            className="font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+          >
+            Hallifax Mining and Energy
           </a>
           <ul className="hidden gap-6 text-gray-700 md:flex">
             <li>
