@@ -1,5 +1,6 @@
 import React, { memo } from "react";
 import { motion } from "framer-motion";
+import LazyImage from "./LazyImage";
 
 const portfolioImages = [
   "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
@@ -26,29 +27,29 @@ const Portfolio = () => {
       </motion.div>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-        <img
+        <LazyImage
           src={portfolioImages[0]}
           alt="Mining Project 1"
           className="object-cover w-full h-64 rounded-lg sm:h-72 md:h-80 lg:h-96"
         />
-        <img
+        <LazyImage
           src={portfolioImages[1]}
           alt="Mining Project 2"
           className="object-cover w-full h-64 rounded-lg sm:h-72 md:h-80 lg:h-96"
         />
         <div className="flex flex-col gap-6">
-          <img
+          <LazyImage
             src={portfolioImages[2]}
             alt="Mining Project 3"
             className="object-cover w-full h-32 rounded-lg sm:h-36 md:h-40 lg:h-44"
           />
-          <img
+          <LazyImage
             src={portfolioImages[3]}
             alt="Mining Project 4"
             className="object-cover w-full h-32 rounded-lg sm:h-36 md:h-40 lg:h-44"
           />
         </div>
-        <img
+        <LazyImage
           src={portfolioImages[4]}
           alt="Mining Project 5"
           className="object-cover w-full h-64 rounded-lg sm:h-72 md:h-80 lg:h-96"

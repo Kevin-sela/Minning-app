@@ -1,6 +1,7 @@
-import React, { useRef, memo } from 'react';
-import Spline from '@splinetool/react-spline';
+import React, { useRef, memo, lazy, Suspense } from 'react';
 import { motion } from "framer-motion";
+
+const Spline = lazy(() => import('@splinetool/react-spline'));
 
 const Hero = () => {
   const spline = useRef<any>(null);
@@ -23,11 +24,13 @@ const Hero = () => {
     >
       {/* 3D Background */}
       <div className="absolute inset-0 z-0 w-full h-full">
-        <Spline
-          scene="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode"
-          onLoad={onLoad}
-          className="w-full h-full"
-        />
+        <Suspense fallback={<div className="w-full h-full bg-black" />}>
+          <Spline
+            scene="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode"
+            onLoad={onLoad}
+            className="w-full h-full"
+          />
+        </Suspense>
       </div>
 
       {/* Overlay Content */}
