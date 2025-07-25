@@ -10,6 +10,12 @@ const LazyImage = ({ src, alt, ...rest }: LazyImageProps) => {
   const imgRef = useRef<HTMLImageElement | null>(null);
 
   useEffect(() => {
+    if (!('IntersectionObserver' in window)) {
+      // If IntersectionObserver is not supported, load image immediately
+      setIsInView(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
@@ -20,7 +26,7 @@ const LazyImage = ({ src, alt, ...rest }: LazyImageProps) => {
         });
       },
       {
-        rootMargin: '100px',
+        rootMargin: '300px',
       }
     );
 

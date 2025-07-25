@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const debounce = (func: () => void, wait: number) => {
-    let timeout: NodeJS.Timeout;
+    let timeout: number;
     return () => {
       clearTimeout(timeout);
       timeout = setTimeout(func, wait);
@@ -30,7 +30,7 @@ const Navbar = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
         className={`fixed top-0 left-0 w-full z-50 backdrop-blur-sm transition-all ${
-          scrolled ? "bg-white/70 shadow-sm" : "bg-transparent"
+          scrolled ? "bg-black/70 shadow-sm" : "bg-transparent"
         }`}
       >
         <div className="flex items-center justify-between max-w-6xl px-6 py-4 mx-auto text-sm">
