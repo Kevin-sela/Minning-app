@@ -79,8 +79,8 @@ return (
         <div className="flex items-center px-6 mb-8">
           <div className="flex items-center justify-center w-10 h-10 text-xs font-bold rounded-full bg-gradient-to-br from-cyan-400 to-blue-500">S</div>
           <div className="ml-3">
-            <h1 className="text-sm font-semibold leading-tight">Softtech</h1>
-            <span className="text-xs text-gray-400">Technology</span>
+            <h1 className="text-sm font-semibold leading-tight">Hallifax</h1>
+            <span className="text-xs text-gray-400">Minnig</span>
           </div>
         </div>
 
