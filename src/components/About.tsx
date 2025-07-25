@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 const About = () => (
   <section id="about" className="w-full py-24 text-white bg-black">
-    <div className="bg-[#08040c] py-6 px-4 mb-12 flex items-center justify-center max-w-[600px] mx-auto">
-      <div className="w-24 h-px md:w-48 bg-white/10" />
-      <p className="px-4 text-lg font-medium text-center text-white md:text-xl">
-        Hallifax Energy and Mining - Serving the Industry Since 2019
-      </p>
-      <div className="w-24 h-px md:w-48 bg-white/10" />
-    </div>
+      <div className="bg-[#08040c] py-6 px-4 mb-12 flex items-center justify-center max-w-[600px] mx-auto">
+        <div className="w-24 h-px md:w-48 bg-white/10" />
+        <p className="px-4 text-lg font-medium text-center text-indigo-600 md:text-xl">
+          Hallifax Energy and Mining - Serving the Industry Since 2019
+        </p>
+        <div className="w-24 h-px md:w-48 bg-white/10" />
+      </div>
 
     <div className="grid items-center grid-cols-1 gap-12 md:grid-cols-2">
       {/* Left: IMAGES */}
