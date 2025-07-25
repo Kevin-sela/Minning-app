@@ -1,3 +1,4 @@
+import React, { memo } from "react";
 import { motion } from "framer-motion";
 
 const Analytics = () => {
@@ -107,4 +108,4 @@ const Analytics = () => {
   );
 };
 
-export default Analytics;
+export default memo(Analytics);

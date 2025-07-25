@@ -1,3 +1,4 @@
+import React, { memo } from "react";
 import { motion } from "framer-motion";
 import { FaMountain, FaHardHat, FaTools } from "react-icons/fa";
 
@@ -91,4 +92,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default memo(Services);

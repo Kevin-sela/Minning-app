@@ -1,3 +1,4 @@
+import React, { memo } from "react";
 import { motion } from "framer-motion";
 
 const About = () => (
@@ -70,4 +71,4 @@ const About = () => (
   </section>
 );
 
-export default About;
+export default memo(About);

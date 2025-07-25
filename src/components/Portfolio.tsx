@@ -1,3 +1,4 @@
+import React, { memo } from "react";
 import { motion } from "framer-motion";
 
 const portfolioImages = [
@@ -57,4 +58,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default memo(Portfolio);

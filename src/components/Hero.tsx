@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import React, { useRef, memo } from 'react';
 import Spline from '@splinetool/react-spline';
 import { motion } from "framer-motion";
 
@@ -56,4 +56,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default memo(Hero);

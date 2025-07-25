@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -26,7 +26,7 @@ return (
       }`}
     >
       <div className="flex items-center justify-between max-w-6xl px-6 py-4 mx-auto text-sm">
-        <a href="#hero" className="font-bold tracking-wide text-gray-900">Hallifax Minning</a>
+        <a href="#hero" className="font-bold tracking-wide text-gray-900">Hallifax Minning and Energy</a>
         <ul className="hidden gap-6 text-gray-700 md:flex">
           <li><a href="#hero" className="hover:text-black">Home</a></li>
           <li><a href="#about" className="hover:text-black">About</a></li>
@@ -152,4 +152,4 @@ return (
   </>
 );}
 
-export default Navbar;
+export default memo(Navbar);

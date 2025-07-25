@@ -1,3 +1,5 @@
+import React, { memo } from "react";
+
 const Footer = () => {
   return (
     <footer className="bg-black text-white px-6 py-12">
@@ -70,4 +72,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);

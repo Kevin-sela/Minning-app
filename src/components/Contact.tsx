@@ -1,3 +1,4 @@
+import React, { memo } from "react";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -45,5 +46,5 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default memo(Contact);
 
