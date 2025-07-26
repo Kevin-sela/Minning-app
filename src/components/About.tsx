@@ -18,7 +18,7 @@ const About = () => (
       <div className="space-y-4">
         {/* Shown only on mobile */}
         <LazyImage
-          src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
+          src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80&auto=format&dpr=2"
           alt="Mining Featured"
           className="object-cover w-full h-64 rounded-lg md:hidden"
         />
