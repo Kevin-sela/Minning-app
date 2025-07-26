@@ -7,8 +7,11 @@ const About = () => (
   <section id="about" className="w-full py-24 text-white bg-black">
       <div className="bg-[#08040c] py-6 px-4 mb-12 flex items-center justify-center max-w-[600px] mx-auto">
         <div className="w-24 h-px md:w-48 bg-white/10" />
-        <p className="px-4 text-lg font-medium text-center text-indigo-600 md:text-xl">
-          Hallifax Energy and Mining - Serving the Industry Since 2019
+        <p className="px-4 text-lg font-medium text-center md:text-xl">
+          <span className="text-indigo 600">
+            Hallifax Energy and Mining{" "}
+            <span className="text white -600">Serving the Industry Since 2019</span>
+          </span>
         </p>
         <div className="w-24 h-px md:w-48 bg-white/10" />
       </div>
@@ -17,7 +20,7 @@ const About = () => (
       {/* Left: IMAGES */}
       <div className="space-y-4">
         {/* Shown only on mobile */}
-        <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" rel="noopener noreferrer" className="relative block md:hidden w-full h-64 rounded-lg overflow-hidden">
+        <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" rel="noopener noreferrer" className="relative block w-full h-64 overflow-hidden rounded-lg md:hidden">
           <LazyImage
             src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80&auto=format&dpr=2"
             alt="Mining Featured"
@@ -32,34 +35,34 @@ const About = () => (
 
         {/* Full grid - shown on all screen sizes */}
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-2">
-          <div className="relative col-span-2 rounded-lg overflow-hidden h-48">
+          <div className="relative h-48 col-span-2 overflow-hidden rounded-lg">
             <img
               src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80&auto=format&dpr=2"
               alt="Mining Project 1"
               className="object-cover w-full h-full"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-              <p className="text-white text-lg font-semibold">Undgo</p>
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+              <p className="text-lg font-semibold text-white">Undgo</p>
             </div>
           </div>
-          <div className="relative rounded-lg overflow-hidden h-48">
+          <div className="relative h-48 overflow-hidden rounded-lg">
             <img
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80&auto=format&dpr=2"
               alt="Mining Project 2"
               className="object-cover w-full h-full"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-              <p className="text-white text-lg font-semibold">Undgo</p>
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+              <p className="text-lg font-semibold text-white">Undgo</p>
             </div>
           </div>
-          <div className="relative rounded-lg overflow-hidden h-48">
+          <div className="relative h-48 overflow-hidden rounded-lg">
             <img
               src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80&auto=format&dpr=2"
               alt="Mining Project 3"
               className="object-cover w-full h-full"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-              <p className="text-white text-lg font-semibold">Undgo</p>
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+              <p className="text-lg font-semibold text-white">Undgo</p>
             </div>
           </div>
         </div>
@@ -94,5 +97,6 @@ const About = () => (
     </div>
   </section>
 );
+
 
 export default memo(About);

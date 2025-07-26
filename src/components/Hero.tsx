@@ -9,6 +9,17 @@ const Hero = () => {
   function onLoad(splineApp: any) {
     // save the app in a ref for later use
     spline.current = splineApp;
+
+    // Start continuous rotation animation if supported
+    if (spline.current) {
+      // Assuming spline.current has a method to start auto rotation
+      if (typeof spline.current.startAutoRotate === 'function') {
+        spline.current.startAutoRotate();
+      } else if (typeof spline.current.emitEvent === 'function') {
+        // Fallback: emit a custom event to start rotation if defined in Spline scene
+        spline.current.emitEvent('startRotation');
+      }
+    }
   }
 
   function triggerAnimation() {

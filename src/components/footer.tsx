@@ -1,6 +1,4 @@
-import React, { memo } from "react";
-
-import React, { memo, Suspense, lazy } from "react";
+import React, { memo, Suspense } from "react";
 
 const FooterContent = () => (
   <footer className="bg-black text-white py-12 w-full">
@@ -79,7 +77,5 @@ const Footer = () => (
     <FooterContent />
   </Suspense>
 );
-
-export default memo(Footer);
 
 export default memo(Footer);
